@@ -1,0 +1,264 @@
+/*Nombre de la veterinaria*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+   background-color:  #dad5ee;
+}
+.me-auto {
+font-size: 40px;
+font-weight: 800;
+color: white;
+}
+
+.me-auto:hover {
+color: white;
+}
+.navbar {
+background-color: #0051a1;
+}
+
+.logo {
+height: 20px;
+}
+.titulo {
+display: flex;
+}
+
+.login-button {
+color: white;
+padding: 8px 20px;
+transition: 0.3s background-color;
+}
+
+.buscar {
+background-color: #a8bbf0;
+color: white;
+font-weight: 700;
+font-size: 20px;
+padding: 8px 20px;
+border-radius: 15px;
+text-decoration: none;
+transition: 0.3s background-color;
+}
+
+.buscar:hover {
+background-color: #8ea7ec;
+}
+
+.carrito {
+width: 50px;
+}
+.navbar-toggler {
+border: none;
+font-size: 1.25rem;
+background-color: #a8bbf0;
+}
+
+.offcanvas-header,
+.offcanvs-title,
+.btn-close {
+color: white;
+}
+
+.navbar-toggler:focus,
+btn-close:focus {
+box-shadow: none;
+outline: none;
+}
+
+.nav-link {
+color: white;
+font-weight: 700;
+font-size: 20px;
+position: relative;
+}
+
+.offcanvas {
+background-color: rgba(0, 81, 161, 0.9);
+}
+.nav-link:hover {
+color: #cbe4ee;
+}
+
+.nav-link:hover,
+nav-link.active {
+color: #cbe4ee;
+}
+
+@media (min-width: 991px) {
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: #cbe4ee;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+  visibility: visible;
+}
+}
+ul li {
+display: inline-block;
+padding: 0px 30px;
+}
+
+.slider-frame {
+/*Tamaño de las imagenes desde el contenedor*/
+width: 51vh;
+margin: 200px auto 0;
+padding: 10px;
+margin-top: 150px;
+overflow: hidden;
+}
+.slider-frame ul {
+display: flex;
+padding: 0;
+padding-right: 20px;
+width: 410%; /*Aqui se cambia el ancho del contenedor de imagenes*/
+animation: slide 15s infinite alternate ease-in-out;
+}
+.slider-frame li {
+list-style: none;
+width: 90%;
+text-align: center;
+}
+.slider-frame img {
+width: 10%;
+border-radius: 5px;
+}
+.slider-frame li img {
+width: 100%;
+height: auto;
+}
+@keyframes slide {
+0% {
+  margin-left: 0;
+}
+20% {
+  margin-left: 0;
+}
+
+25% {
+  margin-left: -100%;
+}
+45% {
+  margin-left: -100%;
+}
+
+50% {
+  margin-left: -200%;
+}
+70% {
+  margin-left: -200%;
+}
+
+75% {
+  margin-left: -300%;
+}
+100% {
+  margin-left: -300%;
+}
+}
+
+/*Apartado de productos*/
+.titulo_productos {
+font-size: 50px;
+font-weight: 900;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 95px;
+background-color: #fefeff;
+border-radius: 10px;
+}
+
+.slogan{
+  margin-top: 75px;
+  font-size: 60px;
+}
+
+h1{
+  font-weight: 800;
+}
+
+.pds {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.img_s1 {   
+height: 300px;
+border-radius: 5px;
+padding: 20px;
+}
+
+.col-md-4{
+  background-color: #a8bbf0;
+  margin-left: 30px;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.agregar{
+  border-radius: 5px;
+  border: 0px;
+  background-color: #2b88e4;
+  height: 40px;
+  width: 70px;
+  font-weight: 700;
+  color: white;
+}
+.agregar:hover{
+  background-color:#4fa0f1;
+}
+
+.pds_1 {
+padding-left: 10px;
+font-weight: 700;
+padding-top: 20px;
+font-size: 10px;
+}
+/*Estilos para el footer*/
+footer {
+background-color: rgb(0, 0, 0);
+font-size: 70px;
+font-weight: 700;
+display: flex;
+justify-content: space-around;
+padding-top: 5%;
+padding: 40px;
+color: #cbe4ee;
+}
+.Text_footer_1 {
+font-size: 14px;
+color: aliceblue;
+}
+.footer_t {
+color: #cbe4ee;
+font-size: 30px;
+font-weight: 800;
+}
+.Text_footer_1 {
+font-size: 14px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
